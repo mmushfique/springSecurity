@@ -1,0 +1,14 @@
+--CREATE TABLE user(
+--    username varchar_ignorecase(50) not null primary key,
+--    password varchar_ignorecase(50) not null,
+--    enabled boolean not null
+--    );
+--
+--CREATE TABLE authorities (
+--    username varchar_ignorecase(50) not null primary key,
+--    authority varchar_ignorecase(50) not null,
+--    CONSTRAINT fk_authorities_users FOREIGN KEY (username) REFERENCES users (username)
+--    );
+--
+--create unique index ix_auth_username on authorities (username, authority);
+

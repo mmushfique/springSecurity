@@ -1,0 +1,28 @@
+spring:
+  datasource:
+#    type: com.zaxxer.hikari.HikariDataSource
+    url: jdbc:mysql://localhost:3306/spring_security?serverTimezone=Asia/Kuala_Lumpur
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update # Or your preferred strategy
+      naming-strategy: org.hibernate.cfg.ImprovedNamingStrategy
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL5Dialect
+##
+##  resources:
+##    static-locations=file:/productImg:
+##logging:
+##  level:
+##    org:
+##      springframework:
+##        security=DEBUG:
+##
+##file:
+##  upload-dir: classpath:/static/assets/img/product/
+##
+##
